@@ -9,6 +9,7 @@ Note: I am by no means an expert, and I cannot promise that my code great qualit
 - Bubble Sort
 - Merge Sort
 - Selection Sort
+- Counting Sort
 
 ### Miscellaneous Algorithms
 - Minimum Coins
