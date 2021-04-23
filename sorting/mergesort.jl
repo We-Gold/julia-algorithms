@@ -1,4 +1,9 @@
-function mergesort!(numbers::Vector{Int64})
+"""
+    mergesort!(numbers)
+
+Takes an array of integers and sorts it using the merge sort algorithm.
+"""
+function mergesort!(numbers::Vector{Int64})::Vector{Int64}
     mergesorthelper!(numbers, 1, lastindex(numbers))
 
     return numbers
@@ -49,8 +54,6 @@ function merge!(numbers::Vector{Int64}, start1::Int64, end1::Int64, start2::Int6
     for i in eachindex(_numbers)
         numbers[range[i]] = _numbers[i]
     end
-
-    return numbers
 end
 
 @time println(mergesort!(rand(-100:100, 20)))

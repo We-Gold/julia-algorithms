@@ -1,4 +1,10 @@
-function countingsort(numbers::Vector{Int64})
+"""
+    countingsort(numbers)
+
+Takes an array of integers and sorts it using the counting sort algorithm.
+Note: does not modify the original array.
+"""
+function countingsort(numbers::Vector{Int64})::Vector{Int64}
     _numbers = []
 
     min, max = extrema(numbers)

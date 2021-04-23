@@ -1,4 +1,9 @@
-function bubblesort!(numbers::Vector{Int64})
+"""
+    bubblesort(numbers)
+
+Takes an array of integers and sorts it using the bubble sort algorithm.
+"""
+function bubblesort!(numbers::Vector{Int64})::Vector{Int64}
     n = length(numbers)
 
     # Loop through the array, swapping adjacent elements 
