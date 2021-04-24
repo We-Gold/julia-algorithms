@@ -31,4 +31,4 @@ function minimumCoins(coins::Vector{Int64}, amount::Int64)
     return min
 end
 
-@time println(minimumCoins([1,6,27,82], 5))
+@time minimumCoins([1,6,27,82], 5)

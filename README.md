@@ -10,6 +10,7 @@ Note: I am by no means an expert, and I cannot promise that my code is great qua
 - Merge Sort
 - Selection Sort
 - Counting Sort
+- Quick Sort
 
 ### Miscellaneous Algorithms
 - Minimum Coins

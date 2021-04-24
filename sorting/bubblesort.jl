@@ -19,4 +19,4 @@ function bubblesort!(numbers::Vector{Int64})::Vector{Int64}
     return numbers
 end
 
-@time println(bubblesort!(rand(-100:100, 100)))
+@time bubblesort!(rand(-100:100, 100))

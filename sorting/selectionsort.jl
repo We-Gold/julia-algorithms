@@ -14,4 +14,4 @@ function selectionsort!(numbers::Vector{Int64})::Vector{Int64}
     return numbers
 end
 
-@time println(selectionsort!(rand(-10:10, 10)))
+@time selectionsort!(rand(-100:100, 20))

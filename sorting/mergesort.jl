@@ -56,4 +56,4 @@ function merge!(numbers::Vector{Int64}, start1::Int64, end1::Int64, start2::Int6
     end
 end
 
-@time println(mergesort!(rand(-100:100, 20)))
+@time mergesort!(rand(-100:100, 20))
