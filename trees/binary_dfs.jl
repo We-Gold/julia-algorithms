@@ -7,11 +7,7 @@ mutable struct BinaryTreeNode
         return new(nothing, nothing, nothing)
     end
 
-    function BinaryTreeNode(data)
-        return new(data, nothing, nothing)
-    end
-
-    function BinaryTreeNode(data, leftchild, rightchild) 
+    function BinaryTreeNode(data; leftchild = nothing, rightchild = nothing) 
         return new(data, leftchild, rightchild)
     end
 end
