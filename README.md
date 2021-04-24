@@ -5,12 +5,18 @@ Note: I am by no means an expert, and I cannot promise that my code is great qua
 
 ### Algorithms Implemented
 
-#### Sorting Algorithms
+### Sorting Algorithms
 - Bubble Sort
 - Merge Sort
 - Selection Sort
 - Counting Sort
 - Quick Sort
+
+### Tree Algorithms
+- Binary Tree Depth First Search
+    - Preorder
+    - Inorder
+    - Postorder
 
 ### Miscellaneous Algorithms
 - Minimum Coins
