@@ -20,7 +20,7 @@ function minimumcoins(coins::Vector{Int64}, amount::Int64)
 
         # Recursively calculate the minimum number of coins still needed
         if(count < min && remainder > 0) 
-            count += minimumCoins(coins[1:(i - 1)], remainder)
+            count += minimumcoins(coins[1:(i - 1)], remainder)
         end
 
         if(count < min) 
@@ -31,4 +31,4 @@ function minimumcoins(coins::Vector{Int64}, amount::Int64)
     return min
 end
 
-@time minimumcoins([1,6,27,82], 5)
+@time minimumcoins([1,6,27,82], 48)
