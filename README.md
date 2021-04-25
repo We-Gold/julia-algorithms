@@ -13,10 +13,11 @@ Note: I am by no means an expert, and I cannot promise that my code is great qua
 - Quick Sort
 
 ### Tree Algorithms
-- Binary Tree Depth First Search
-    - Preorder
-    - Inorder
-    - Postorder
+- Binary Tree
+    - Preorder (DFS)
+    - Inorder (DFS)
+    - Postorder (DFS)
+    - Level Order (BFS)
 
 ### Miscellaneous Algorithms
 - Minimum Coins
