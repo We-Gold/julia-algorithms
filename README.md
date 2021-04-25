@@ -19,6 +19,9 @@ Note: I am by no means an expert, and I cannot promise that my code is great qua
     - Postorder (DFS)
     - Level Order (BFS)
 
+### Conversions
+- Binary To Decimal
+
 ### Miscellaneous Algorithms
 - Minimum Coins
 

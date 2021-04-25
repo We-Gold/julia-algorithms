@@ -1,10 +1,10 @@
 """
-    minimumCoins(coins, amount)
+    minimumcoins(coins, amount)
 
 Given a coinage system `coins`, and a desired amount of money `amount`,
 compute the minimum number of coins needed to produce that amount of money.
 """
-function minimumCoins(coins::Vector{Int64}, amount::Int64)
+function minimumcoins(coins::Vector{Int64}, amount::Int64)
     min = Inf
 
     # Find the number of coins used for each valid coin, and take the minimum.
@@ -31,4 +31,4 @@ function minimumCoins(coins::Vector{Int64}, amount::Int64)
     return min
 end
 
-@time minimumCoins([1,6,27,82], 5)
+@time minimumcoins([1,6,27,82], 5)

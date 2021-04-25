@@ -13,7 +13,7 @@ mutable struct BinaryTreeNode
 end
 
 """
-    preorder_dfs(root)
+    preorder_dfs(root::BinaryTreeNode)::Vector{BinaryTreeNode}
 
 Performs a preorder traversal of a given binary tree.
 """
@@ -37,7 +37,7 @@ function preorder_dfs(root::BinaryTreeNode)::Vector{BinaryTreeNode}
 end
 
 """
-    inorder_dfs(root)
+    inorder_dfs(root::BinaryTreeNode)::Vector{BinaryTreeNode}
 
 Performs an inorder traversal of a given binary tree.
 """
@@ -61,7 +61,7 @@ function inorder_dfs(root::BinaryTreeNode)::Vector{BinaryTreeNode}
 end
 
 """
-    postorder_dfs(root)
+    postorder_dfs(root::BinaryTreeNode)::Vector{BinaryTreeNode}
 
 Performs a postorder traversal of a given binary tree.
 """

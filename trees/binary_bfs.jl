@@ -13,7 +13,7 @@ mutable struct BinaryTreeNode
 end
 
 """
-    bfs(root)
+    bfs(root::BinaryTreeNode)::Vector{BinaryTreeNode}
 
 Performs a level order traversal (aka breadth first search) of a given binary tree.
 """
