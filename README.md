@@ -25,5 +25,6 @@ Note: I am by no means an expert, and I cannot promise that my code is great qua
 ### Miscellaneous Algorithms
 - Minimum Coins
 - Fibonacci
+- Knapsack Problem
 
 *And many more to come*
