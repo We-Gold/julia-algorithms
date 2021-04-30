@@ -10,6 +10,11 @@ I do not know what "the" solution is to this problem.
 Note: In a dense set (small range), it is better to use BitSet, rather than Set.
 """
 function knapsack(set, target)
+    # Make sure the target is possible to reach
+    if sum(set) < target
+        return false
+    end
+
     sets = Dict{Set{Int64}, Int64}()
 
     # Add all numbers to initial sets
