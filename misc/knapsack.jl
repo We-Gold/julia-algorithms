@@ -15,6 +15,59 @@ function knapsack(set, target)
         return false
     end
 
+    remainders = Dict{Int64, Set{Int64}}()
+
+    # Calculate the initial remainders
+    for number in set
+        remainder = target - number
+        
+        if remainder == 0
+            return true
+        end
+        
+        if remainder < 0
+            continue
+        end
+
+        remainders[target - number] = Set([number])
+    end
+
+    for number in set
+        for (remainder, currentset) in remainders
+            newremainder = remainder - number
+
+            if newremainder < 0 || number in currentset || haskey(remainders, newremainder)
+                continue
+            end
+
+            if newremainder == 0
+                return true
+            end
+
+            remainders[newremainder] = union(currentset, number)
+        end
+    end
+
+    return false
+end
+
+"""
+    knapsack_old(set, target)
+
+Given a set of numbers and a target amount, 
+returns if the sum of any subsection of the set is that target amount.
+
+Info: This is one of my own personal solution to the knapsack problem. 
+It is not very efficient, especially compared to my new solution, so I wouldn't recommend using it. 
+
+Note: In a dense set (small range), it is better to use BitSet, rather than Set.
+"""
+function knapsack_old(set, target)
+    # Make sure the target is possible to reach
+    if sum(set) < target
+        return false
+    end
+
     sets = Dict{Set{Int64}, Int64}()
 
     # Add all numbers to initial sets
@@ -64,5 +117,5 @@ end
 @time knapsack(Set([1,3,5,6,8,2,12,13,15,27,56]), 76)
 
 # OUTPUT:
-# 0.000024 seconds (166 allocations: 20.367 KiB)
+# 0.000040 seconds (112 allocations: 12.727 KiB)
 # true
